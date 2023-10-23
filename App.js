@@ -11,7 +11,6 @@ const carsData = [
   { id: '6', name: 'Carro 6', image: require('./assets/E-tron.png'), valorPorDia: 70 },
   { id: '7', name: 'Carro 7', image: require('./assets/E-tron.png'), valorPorDia: 70 },
   { id: '8', name: 'Carro 8', image: require('./assets/E-tron.png'), valorPorDia: 70 },
-  // Adicione valorPorDia para outros carros
 ];
 
 const carDetails = [
@@ -23,7 +22,6 @@ const carDetails = [
   { id: '6', color: 'Vinho', MaxSpeed: '180km/h', door: '4' },
   { id: '7', color: 'Branco', MaxSpeed: '180km/h', door: '4' },
   { id: '8', color: 'Vermelo', MaxSpeed: '180km/h', door: '4' },
-  // Adicione descrições para outros carros
 ];
 
 export default function App() {
@@ -76,9 +74,6 @@ export default function App() {
   const handleConfirmRent = () => {
     calculateTotalCost();
 
-    // Implemente a lógica para confirmar o aluguel aqui.
-    // Por exemplo, você pode enviar os detalhes ao servidor.
-    // Em vez disso, vou exibir uma mensagem de pop-up aqui.
     const message = `Carro alugado com sucesso!\nValor total: R$ ${totalCost.toFixed(2)}\nData de retirada: ${pickupDate ? pickupDate.toDateString() : 'N/A'}`;
     setPopupMessage(message);
     setPopupVisible(true);
